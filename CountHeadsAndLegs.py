@@ -1,5 +1,8 @@
 def CountHeadsAndLegs( m, n ):
-  
+      for chicken in range(1,m):
+        pig = m-chicken
+        if 2*chicken+4*pig == n:
+            return chicken, pig
 
 
 
