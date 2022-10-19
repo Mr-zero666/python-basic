@@ -1,4 +1,11 @@
 def FlattenList( l ):
+    new = []
+    for i in range(len(l)):
+        if isinstance(l[i], list):
+            new += l[i]
+        else:
+            new.append(l[i])
+    return new
 
 
 
