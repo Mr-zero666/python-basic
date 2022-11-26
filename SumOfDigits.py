@@ -1,10 +1,12 @@
-def SumOfDigits(n):
-    sum = 0
-    while n != 0:
-        sum += n % 10
-        n //= 10
-    return sum
+def SumOfDigits( n ):
+    s = str(n)
+    t = 0
+    for x in s:
+        t += int( x )
 
-if __name__ == '__main__':
-    s = SumOfDigits(12345)
-    print(s)
+    return t
+
+
+if __name__=='__main__':
+    s = SumOfDigits( 12345 )
+    print( s )

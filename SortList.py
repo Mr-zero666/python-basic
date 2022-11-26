@@ -1,17 +1,22 @@
-def SortList(lst, order):
-    New_list = lst.copy()
-
+def SortList( lst, order ):
+    l = lst.copy()
     if order == 'asc':
-        New_list.sort()
+        l.sort()
     elif order == 'desc':
-        New_list.sort(reverse=True)
-    return New_list
+        l.sort( reverse=True)
+    else:
+        pass
 
-if __name__ == '__main__':
-    lst = [1, 3, 2, 5, 4]
-    l = SortList(lst, 'asc')
-    print(l)
-    l = SortList(lst, 'desc')
-    print(l)
-    l = SortList(lst, 'none')
-    print(l)
+    return l
+
+
+if __name__=='__main__':
+    lst = [ 1, 3, 2, 5, 4]
+    l = SortList( lst, 'asc' )
+    print( l )
+    l = SortList( lst, 'desc' )
+    print( l )
+    l = SortList( lst, 'none' )
+    print( l )
+    
+        

@@ -1,17 +1,20 @@
-def RemoveDuplicate(l):
-    comp = None
-    out = []
+def RemoveDuplicate( l ):
+    prev = None
+    r = []
     for x in l:
-        if comp is None:
-            comp = x
-            out.append(x)
-        elif comp != x:
-            out.append(x)
-            comp = x
-    return out
+        if prev == None:
+            prev = x
+            r.append( x )
+        elif prev != x:
+            r.append( x )
+            prev = x
 
-if __name__ == '__main__':
+    return r
+
+
+
+if __name__=='__main__':
     l = [0, 0, 1, 2, 3, 3, 4, 4, 4, 5, 6, 6, 2, 2]
-    r = RemoveDuplicate(l)
-    print(r)
+    r = RemoveDuplicate( l )
+    print( r )
     assert r == [0, 1, 2, 3, 4, 5, 6, 2]
