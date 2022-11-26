@@ -1,4 +1,4 @@
-def FizzBuzz( n ):
+def FizzBuzz(n):
     a = []
     for i in range(1,n+1):
         if i % 4 == 0 and i % 6 == 0:
@@ -12,7 +12,6 @@ def FizzBuzz( n ):
     return a
 
 
-
-if __name__=='__main__':
-    x = FizzBuzz( 13 )
-    print( x )
+if __name__ == '__main__':
+    x = FizzBuzz(13)
+    print(x)

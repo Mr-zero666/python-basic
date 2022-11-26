@@ -1,7 +1,10 @@
-def SumOfDigits( n ):
+def SumOfDigits(n):
+    sum = 0
+    while n != 0:
+        sum += n % 10
+        n //= 10
+    return sum
 
-
-
-if __name__=='__main__':
-    s = SumOfDigits( 12345 )
-    print( s )
+if __name__ == '__main__':
+    s = SumOfDigits(12345)
+    print(s)

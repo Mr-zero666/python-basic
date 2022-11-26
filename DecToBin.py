@@ -1,4 +1,4 @@
-def DecToBin( n ):
+def Dectobin(input):
     out = list()
     new = ''
     while input != 0:
@@ -11,9 +11,8 @@ def DecToBin( n ):
     out.sort(reverse=True)
     new = new.join(out)
     return new
-    
 
+if __name__ == '__main__':
+    r = Dectobin(32)
+    print(r)
 
-if __name__=='__main__':
-    s = DecToBin( 32 )
-    print( s )

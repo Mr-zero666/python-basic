@@ -1,9 +1,8 @@
-def MaxOfThree( x, y, z ):
-    
-
+def MaxOfThree(x, y, z):
+    return max(x,y,z)
 
 
 if __name__ == '__main__':
-    m = MaxOfThree( 1, 5, 3 )
-    print( m )
-    assert m == 5 
+    m = MaxOfThree(1, 5, 3)
+    print(m)
+    assert m == 5
