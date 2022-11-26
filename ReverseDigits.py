@@ -1,13 +1,9 @@
 def ReverseDigits(n):
-    s = ''
-    new_list = list(str(n))
-    for i in range(len(new_list)):
-        if new_list[-1] == '0':
-            new_list.pop()
-    t = new_list[::-1]
-    for item in t:
-        s = s+item
-    return int(s)
+    s = str(n)
+    s = s[::-1]
+    r = int(s)
+    return r
+
 
 if __name__ == '__main__':
     n = ReverseDigits(123)

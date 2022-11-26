@@ -1,12 +1,14 @@
 def RemoveDuplicate(l):
-    a = l
-    i = 0
-    while i < len(l)-1:
-        if a[i] == a[i+1]:
-            del a[i]
-        else:
-            i += 1
-    return a
+    comp = None
+    out = []
+    for x in l:
+        if comp is None:
+            comp = x
+            out.append(x)
+        elif comp != x:
+            out.append(x)
+            comp = x
+    return out
 
 if __name__ == '__main__':
     l = [0, 0, 1, 2, 3, 3, 4, 4, 4, 5, 6, 6, 2, 2]
